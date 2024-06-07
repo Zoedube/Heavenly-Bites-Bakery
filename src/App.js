@@ -1,11 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
 import './output.css';
-import {Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Home from './pages/home';
 import Favorites from './pages/favorites';
 import Details from './pages/details';
+import RecipeLayout from './recipeInfo/RecipeLayout';
 
 function App() {
   return (
@@ -26,9 +27,9 @@ function App() {
             }
           />
           <Route
-            path='/recipe-item/:id'
+            path='/recipe/:id'
             element={
-              <Details />
+              <RecipeLayout {...1} />
             }
           />
         </Routes>

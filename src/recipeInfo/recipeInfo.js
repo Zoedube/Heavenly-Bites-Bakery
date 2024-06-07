@@ -1,5 +1,6 @@
 class Recipe {
-    constructor(title, image, ingredients, instructions) {
+    constructor(id, title, image, ingredients, instructions) {
+        this.id = id;
         this.title = title;
         this.image = image;
         this.ingredients = ingredients;
@@ -10,6 +11,7 @@ class Recipe {
 
 let recipes = [
     new Recipe(
+        "1",
         "Chocolate Chip Cookies",
         "images/choco_loco_cake_2.jpg",
         [
@@ -37,6 +39,7 @@ let recipes = [
     ),
 
     new Recipe(
+        "2",
         "Carrot Cake with Cream Cheese Frosting",
         "images/carrot_cake.jpg",
         [
@@ -75,6 +78,7 @@ let recipes = [
         ]
     ),
     new Recipe(
+        3,
         "Strawberry Cake",
         "images/naked_strawberry_shortcake_1_1.jpg",
         [
@@ -109,6 +113,7 @@ let recipes = [
 
 
     new Recipe(
+        4,
         "Lemon Cake",
         "https://images.example.com/lemon_cake.jpg",
         [
@@ -145,6 +150,7 @@ let recipes = [
     ),
 
     new Recipe(
+        5,
         "Red Velvet",
         "",
         [
@@ -188,6 +194,7 @@ let recipes = [
     ),
 
     new Recipe(
+        6,
         "Red Velvet Cake",
         "**Replace with your image URL**", // Update with the actual image URL
         [
@@ -221,3 +228,5 @@ let recipes = [
         ]
     )
 ]
+
+export default recipes;

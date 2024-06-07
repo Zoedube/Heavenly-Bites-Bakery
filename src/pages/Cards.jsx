@@ -13,7 +13,7 @@ function Cards() {
             src='https://i.pinimg.com/736x/6e/91/02/6e91020d810ea213cde0898a9ff9a0f9.jpg'
             text='Indulge in our timeless Classic Vanilla Delight, a moist and fluffy cake layered with rich vanilla bean buttercream, perfect for any occasion.'
             label='Classic Vanilla Delight'
-            path='/services'/>
+            path='/recipe/1'/>
             <CardItem 
             src='https://i.pinimg.com/564x/11/1b/a0/111ba08583add9caf476d6cae573f43c.jpg'
             text='Experience pure bliss with our Decadent Chocolate Dream, featuring layers of luscious chocolate cake and creamy ganache, a true treat for chocolate lovers.'
