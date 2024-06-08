@@ -11,8 +11,8 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 30px;
-  color: black;
+  font-size: 65px;
+  color: #FF5300;
 }
 
 .cards__container {
@@ -38,8 +38,15 @@ h1 {
   flex: 1;
   margin: 0 1rem;
   border-radius: 10px;
-  border: 3px solid #66547c;
- background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/01/16/Pale-Pink-And-White-Marble-Texture-Background-57836537-1-1.png');
+  border: 5px solid #FF5300;
+  background-image: url('https://www.creativefabrica.com/wp-content/uploads/2023/01/16/Pale-Pink-And-White-Marble-Texture-Background-57836537-1-1.png');
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1); 
+  transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.cards__item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2), 0 10px 10px rgba(0, 0, 0, 0.15); 
 }
 
 .cards__item__link {
@@ -52,7 +59,6 @@ h1 {
   overflow: hidden;
   text-decoration: none;
 }
-
 .cards__item__pic-wrap {
   position: relative;
   width: 100%;
@@ -75,8 +81,15 @@ h1 {
   font-size: 14px;
   font-weight: 555;
   color: white;
-  background-color: #66547c;
+  background-color: #009C53;
   box-sizing: border-box;
+  transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease; 
+}
+
+.cards__item__pic-wrap:hover::after {
+  transform: scale(1.1);
+  background-color: #FFD332; 
+  opacity: 0.9; 
 }
 
 .cards__item__img {
