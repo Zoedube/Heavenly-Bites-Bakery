@@ -38,7 +38,7 @@ function Cards() {
             path='/services'/>
             <CardItem 
             src='https://i.pinimg.com/564x/41/c2/1e/41c21e59b46b38fd625ba3cfafc3fea6.jpg'
-            text='ndulge in our Heavenly Hazelnut Praline, a rich and nutty creation with layers of hazelnut sponge cake and velvety praline buttercream.
+            text='Indulge in our Heavenly Hazelnut Praline, a rich and nutty creation with layers of hazelnut sponge cake and velvety praline buttercream.
             '
             label='Hazelnut Praline'
             path='/services'/>
@@ -57,7 +57,7 @@ function Cards() {
             <CardItem 
             src='https://i.pinimg.com/564x/58/dd/71/58dd718b410d459d23539d51171fb82d.jpg'
             text='Transport yourself to a tropical paradise with our Coconut Cream Paradise, a light and fluffy coconut cake filled with coconut cream and topped with shredded coconut.'
-            label='Coconut Cream Paradise'
+            label='Coconut Cream'
             path='/services'/>
             <CardItem 
             src='https://i.pinimg.com/564x/7a/64/e9/7a64e96f2f367e0d9421c8d445c0a4ce.jpg'
