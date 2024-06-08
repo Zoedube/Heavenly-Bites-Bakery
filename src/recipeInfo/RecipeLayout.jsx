@@ -7,20 +7,24 @@ const RecipeLayout = () => {
     const recipe = getRecipe(id);
     return (
         <div className="container mx-auto px-4 py-8">
-      <div className="flex flex-wrap">
-        <div className="w-full md:w-1/2 mb-4 md:mb-0">
-          <img src={recipe.image} alt={recipe.title} />
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="relative">
+          <img
+            src={recipe.image}
+            alt={recipe.title}
+            className="w-full object-contain rounded-md"
+          />
         </div>
-        <div className="w-full md:w-1/2 px-4 bg-[#F8EAEF] rounded-md">
+        <div className="bg-[#F8EAEF] rounded-md px-4 py-4" style={{ marginBottom: '20px' }}>
           <h1 className="text-3xl font-bold mb-4">{recipe.title}</h1>
           <p className="mb-4">{recipe.description}</p>
           <div className="flex flex-wrap mb-4">
-        <div className="bg-[#C3C6D5] text-white px-4 py-2 rounded-md flex flex-wrap"> {/* Added box styles */}
-          <p className="text-gray-700 mr-4">Prep Time: {recipe.prepTime}</p>
-          <p className="text-gray-700 mr-4">Cook Time: {recipe.cookTime}</p>
-          <p className="text-gray-700">Servings: {recipe.servings}</p>
-        </div>
-      </div>
+            <div className="bg-[#C3C6D5] text-white px-4 py-2 rounded-md flex flex-wrap">
+              <p className="text-gray-700 mr-4">Prep Time: {recipe.prepTime}</p>
+              <p className="text-gray-700 mr-4">Cook Time: {recipe.cookTime}</p>
+              <p className="text-gray-700">Servings: {recipe.servings}</p>
+            </div>
+          </div>
 
           <h2 className="text-xl font-bold mb-2">Ingredients</h2>
           <ul className="list-disc ml-4">
