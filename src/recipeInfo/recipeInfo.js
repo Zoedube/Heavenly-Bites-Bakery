@@ -1,7 +1,10 @@
 class Recipe {
-    constructor(id, title, image, ingredients, instructions) {
+    constructor(id, title, image, prepTime, cookTime, servings, ingredients, instructions) {
         this.id = id;
         this.title = title;
+        this.prepTime = prepTime;
+        this.cookTime = cookTime;
+        this.servings = servings;
         this.image = image;
         this.ingredients = ingredients;
         this.instructions = instructions;
@@ -12,36 +15,40 @@ class Recipe {
 let recipes = [
     new Recipe(
         "1",
-        "Chocolate Chip Cookies",
-        "images/choco_loco_cake_2.jpg",
+        "Classic Vanilla Delight",
+        "https://i.pinimg.com/736x/6e/91/02/6e91020d810ea213cde0898a9ff9a0f9.jpg",
+        '30 mins',
+        "45 mins",
+        "5",
         [
-            "1 cup (2 sticks) unsalted butter, softened",
-            "1 cup granulated sugar",
-            "1 cup packed light brown sugar",
-            "2 large eggs",
+            "1 ¾ cups cake flour",
+            "2 teaspoons baking powder",
+            "¾ teaspoon salt",
+            "1 cup unsalted butter, softened",
+            "2 ½ cups granulated sugar",
             "2 teaspoons pure vanilla extract",
-            "2 ½ cups all-purpose flour",
-            "1 teaspoon baking soda",
-            "1 teaspoon salt",
-            "2 cups semisweet chocolate chips",
+            "4 large eggs",
+            "1 cup milk",
         ],
         [
-            "Preheat oven to 375 degrees F (190 degrees C).",
-            "In a large bowl, cream together butter and sugars until light and fluffy.",
-            "Beat in eggs one at a time, then stir in vanilla extract.",
-            "In a separate bowl, whisk together flour, baking soda, and salt.",
-            "Gradually add dry ingredients to wet ingredients, mixing until just combined.",
-            "Stir in chocolate chips.",
-            "Drop by rounded tablespoons onto ungreased baking sheets.",
-            "Bake for 10-12 minutes, or until edges are golden brown.",
-            "Let cool on baking sheets for a few minutes before transferring to a wire rack to cool completely.",
+            "Preheat oven to 350°F (175°C). Grease and flour two 8-inch round cake pans.",
+            "In a medium bowl, whisk together cake flour, baking powder, and salt. Set aside.",
+            "In a large bowl, cream together softened butter and sugar until light and fluffy. Beat in vanilla extract.",
+            "Add eggs one at a time, beating well after each addition.",
+            "Alternately add the dry ingredients and milk to the wet ingredients, beginning and ending with the dry ingredients. Mix until just combined, scraping down the sides of the bowl as needed.",
+            "Divide batter evenly between the prepared cake pans.",
+            "Bake for 30-35 minutes, or until a toothpick inserted into the center comes out clean. Let cakes cool in pans for 10 minutes, then transfer to a wire rack to cool completely.",
+            "Once cool, frost the cake with your favorite vanilla frosting. Enjoy!",
         ]
     ),
 
     new Recipe(
         "2",
-        "Carrot Cake with Cream Cheese Frosting",
-        "images/carrot_cake.jpg",
+        "Decadent Chocolate",
+        "https://i.pinimg.com/564x/11/1b/a0/111ba08583add9caf476d6cae573f43c.jpg",
+        '30 mins',
+        "45 mins",
+        "5",
         [
             // Cake ingredients
             "1 ¾ cups all-purpose flour",
@@ -78,9 +85,12 @@ let recipes = [
         ]
     ),
     new Recipe(
-        3,
-        "Strawberry Cake",
-        "images/naked_strawberry_shortcake_1_1.jpg",
+        "3",
+        "Luscious Lemon Zest",
+        "https://i.pinimg.com/564x/b3/3f/c1/b33fc1941d036d03a6fda2eec79dc834.jpg",
+        "30 mins",
+        "45 mins",
+        "5",
         [
             // Cake ingredients
             "1 ½ cups all-purpose flour",
@@ -113,9 +123,12 @@ let recipes = [
 
 
     new Recipe(
-        4,
-        "Lemon Cake",
-        "https://images.example.com/lemon_cake.jpg",
+        "4",
+        "Velvety Red Velvet",
+        "https://i.pinimg.com/564x/3e/54/cd/3e54cdf4b7e03762c6ccced98dc4580d.jpg",
+        "30 mins",
+        "45 mins",
+        "5",
         [
             // Cake ingredients
             "3 cups cake flour",
@@ -150,9 +163,12 @@ let recipes = [
     ),
 
     new Recipe(
-        5,
-        "Red Velvet",
-        "",
+        "5",
+        "Strawberry Shortcake",
+        "https://i.pinimg.com/564x/01/d1/25/01d125d645ad7af91863cc4ecc95f804.jpg",
+        "30 mins",
+        "45 mins",
+        "5",
         [
             // Cake ingredients
             "175 g butter, softened",
@@ -194,9 +210,12 @@ let recipes = [
     ),
 
     new Recipe(
-        6,
-        "Red Velvet Cake",
-        "**Replace with your image URL**", // Update with the actual image URL
+        "6",
+        "Hazelnut Praline",
+        "https://i.pinimg.com/564x/41/c2/1e/41c21e59b46b38fd625ba3cfafc3fea6.jpg", // Update with the actual image URL
+        "30 mins",
+        "45 mins",
+        "5",
         [
             // Cake ingredients
             "1 ¾ cups all-purpose flour",
@@ -226,7 +245,227 @@ let recipes = [
             "Let the cakes cool in the pans for 10 minutes, then transfer them to a wire rack to cool completely.",
             "In a large bowl, cream together cream cheese and butter until light and fluffy. Beat in powdered sugar one cup at a time, until smooth and creamy. Stir in vanilla extract.",
         ]
-    )
+    ), new Recipe(
+        "7",
+        "Exotic Mango Passion",
+        "https://i.pinimg.com/564x/87/8d/1c/878d1c7ede9711dba2db951c8d103c6b.jpg", // Update with the actual image URL
+        "30 mins",
+        "45 mins",
+        "5",
+        [
+            // Cake ingredients
+            "1 ¾ cups all-purpose flour",
+            "1 teaspoon baking soda",
+            "½ teaspoon salt",
+            "1 cup (2 sticks) unsalted butter, softened",
+            "1 ½ cups granulated sugar",
+            "2 large eggs",
+            "1 teaspoon pure vanilla extract",
+            "1 cup buttermilk",
+            "1 tablespoon cocoa powder",
+            "1 tablespoon red food coloring",
+            "1 tablespoon white vinegar",
+            "8 oz cream cheese, softened",
+            "½ cup unsalted butter, softened",
+            "3 cups powdered sugar",
+            "1 teaspoon pure vanilla extract",
+        ],
+        [
+            "Preheat oven to 350 degrees F (175 degrees C). Grease and flour three 8-inch round cake pans.",
+            "In a medium bowl, whisk together flour, baking soda, and salt.",
+            "In a large bowl, cream together butter and sugar until light and fluffy. Beat in eggs one at a time, then stir in vanilla extract.",
+            "In a separate small bowl, whisk together buttermilk, cocoa powder, and red food coloring.",
+            "Alternately add the dry ingredients and buttermilk mixture to the wet ingredients, beginning and ending with the dry ingredients. Mix until just combined.",
+            "In a small bowl, combine white vinegar and baking soda. The mixture will fizz. Quickly stir it into the cake batter.",
+            "Divide the batter evenly between the prepared pans. Bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean.",
+            "Let the cakes cool in the pans for 10 minutes, then transfer them to a wire rack to cool completely.",
+            "In a large bowl, cream together cream cheese and butter until light and fluffy. Beat in powdered sugar one cup at a time, until smooth and creamy. Stir in vanilla extract.",
+        ]
+    ), new Recipe(
+        "8",
+        "Caramel Toffee",
+        "https://i.pinimg.com/564x/c5/df/89/c5df898c3afaad563edbbf0c82bb8898.jpg", // Update with the actual image URL
+        "30 mins",
+        "45 mins",
+        "5",
+        [
+            // Cake ingredients
+            "1 ¾ cups all-purpose flour",
+            "1 teaspoon baking soda",
+            "½ teaspoon salt",
+            "1 cup (2 sticks) unsalted butter, softened",
+            "1 ½ cups granulated sugar",
+            "2 large eggs",
+            "1 teaspoon pure vanilla extract",
+            "1 cup buttermilk",
+            "1 tablespoon cocoa powder",
+            "1 tablespoon red food coloring",
+            "1 tablespoon white vinegar",
+            "8 oz cream cheese, softened",
+            "½ cup unsalted butter, softened",
+            "3 cups powdered sugar",
+            "1 teaspoon pure vanilla extract",
+        ],
+        [
+            "Preheat oven to 350 degrees F (175 degrees C). Grease and flour three 8-inch round cake pans.",
+            "In a medium bowl, whisk together flour, baking soda, and salt.",
+            "In a large bowl, cream together butter and sugar until light and fluffy. Beat in eggs one at a time, then stir in vanilla extract.",
+            "In a separate small bowl, whisk together buttermilk, cocoa powder, and red food coloring.",
+            "Alternately add the dry ingredients and buttermilk mixture to the wet ingredients, beginning and ending with the dry ingredients. Mix until just combined.",
+            "In a small bowl, combine white vinegar and baking soda. The mixture will fizz. Quickly stir it into the cake batter.",
+            "Divide the batter evenly between the prepared pans. Bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean.",
+            "Let the cakes cool in the pans for 10 minutes, then transfer them to a wire rack to cool completely.",
+            "In a large bowl, cream together cream cheese and butter until light and fluffy. Beat in powdered sugar one cup at a time, until smooth and creamy. Stir in vanilla extract.",
+        ]
+    ),
+    new Recipe(
+        "9",
+        "Coconut Cream Paradise",
+        "https://i.pinimg.com/564x/58/dd/71/58dd718b410d459d23539d51171fb82d.jpg", // Update with the actual image URL
+        "30 mins",
+        "45 mins",
+        "5",
+        [
+            // Cake ingredients
+            "1 ¾ cups all-purpose flour",
+            "1 teaspoon baking soda",
+            "½ teaspoon salt",
+            "1 cup (2 sticks) unsalted butter, softened",
+            "1 ½ cups granulated sugar",
+            "2 large eggs",
+            "1 teaspoon pure vanilla extract",
+            "1 cup buttermilk",
+            "1 tablespoon cocoa powder",
+            "1 tablespoon red food coloring",
+            "1 tablespoon white vinegar",
+            "8 oz cream cheese, softened",
+            "½ cup unsalted butter, softened",
+            "3 cups powdered sugar",
+            "1 teaspoon pure vanilla extract",
+        ],
+        [
+            "Preheat oven to 350 degrees F (175 degrees C). Grease and flour three 8-inch round cake pans.",
+            "In a medium bowl, whisk together flour, baking soda, and salt.",
+            "In a large bowl, cream together butter and sugar until light and fluffy. Beat in eggs one at a time, then stir in vanilla extract.",
+            "In a separate small bowl, whisk together buttermilk, cocoa powder, and red food coloring.",
+            "Alternately add the dry ingredients and buttermilk mixture to the wet ingredients, beginning and ending with the dry ingredients. Mix until just combined.",
+            "In a small bowl, combine white vinegar and baking soda. The mixture will fizz. Quickly stir it into the cake batter.",
+            "Divide the batter evenly between the prepared pans. Bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean.",
+            "Let the cakes cool in the pans for 10 minutes, then transfer them to a wire rack to cool completely.",
+            "In a large bowl, cream together cream cheese and butter until light and fluffy. Beat in powdered sugar one cup at a time, until smooth and creamy. Stir in vanilla extract.",
+        ]
+    ),
+    new Recipe(
+        "10",
+        "Rich Coffee Mocha",
+        "https://i.pinimg.com/564x/7a/64/e9/7a64e96f2f367e0d9421c8d445c0a4ce.jpg", // Update with the actual image URL
+        "30 mins",
+        "45 mins",
+        "5",
+        [
+            // Cake ingredients
+            "1 ¾ cups all-purpose flour",
+            "1 teaspoon baking soda",
+            "½ teaspoon salt",
+            "1 cup (2 sticks) unsalted butter, softened",
+            "1 ½ cups granulated sugar",
+            "2 large eggs",
+            "1 teaspoon pure vanilla extract",
+            "1 cup buttermilk",
+            "1 tablespoon cocoa powder",
+            "1 tablespoon red food coloring",
+            "1 tablespoon white vinegar",
+            "8 oz cream cheese, softened",
+            "½ cup unsalted butter, softened",
+            "3 cups powdered sugar",
+            "1 teaspoon pure vanilla extract",
+        ],
+        [
+            "Preheat oven to 350 degrees F (175 degrees C). Grease and flour three 8-inch round cake pans.",
+            "In a medium bowl, whisk together flour, baking soda, and salt.",
+            "In a large bowl, cream together butter and sugar until light and fluffy. Beat in eggs one at a time, then stir in vanilla extract.",
+            "In a separate small bowl, whisk together buttermilk, cocoa powder, and red food coloring.",
+            "Alternately add the dry ingredients and buttermilk mixture to the wet ingredients, beginning and ending with the dry ingredients. Mix until just combined.",
+            "In a small bowl, combine white vinegar and baking soda. The mixture will fizz. Quickly stir it into the cake batter.",
+            "Divide the batter evenly between the prepared pans. Bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean.",
+            "Let the cakes cool in the pans for 10 minutes, then transfer them to a wire rack to cool completely.",
+            "In a large bowl, cream together cream cheese and butter until light and fluffy. Beat in powdered sugar one cup at a time, until smooth and creamy. Stir in vanilla extract.",
+        ]
+    ),
+    new Recipe(
+        "11",
+        "Earl Grey Lavender",
+        "https://i.pinimg.com/564x/33/8a/41/338a41d91065b4d3eb727e72b98431fe.jpg", // Update with the actual image URL
+        "30 mins",
+        "45 mins",
+        "5",
+        [
+            // Cake ingredients
+            "1 ¾ cups all-purpose flour",
+            "1 teaspoon baking soda",
+            "½ teaspoon salt",
+            "1 cup (2 sticks) unsalted butter, softened",
+            "1 ½ cups granulated sugar",
+            "2 large eggs",
+            "1 teaspoon pure vanilla extract",
+            "1 cup buttermilk",
+            "1 tablespoon cocoa powder",
+            "1 tablespoon red food coloring",
+            "1 tablespoon white vinegar",
+            "8 oz cream cheese, softened",
+            "½ cup unsalted butter, softened",
+            "3 cups powdered sugar",
+            "1 teaspoon pure vanilla extract",
+        ],
+        [
+            "Preheat oven to 350 degrees F (175 degrees C). Grease and flour three 8-inch round cake pans.",
+            "In a medium bowl, whisk together flour, baking soda, and salt.",
+            "In a large bowl, cream together butter and sugar until light and fluffy. Beat in eggs one at a time, then stir in vanilla extract.",
+            "In a separate small bowl, whisk together buttermilk, cocoa powder, and red food coloring.",
+            "Alternately add the dry ingredients and buttermilk mixture to the wet ingredients, beginning and ending with the dry ingredients. Mix until just combined.",
+            "In a small bowl, combine white vinegar and baking soda. The mixture will fizz. Quickly stir it into the cake batter.",
+            "Divide the batter evenly between the prepared pans. Bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean.",
+            "Let the cakes cool in the pans for 10 minutes, then transfer them to a wire rack to cool completely.",
+            "In a large bowl, cream together cream cheese and butter until light and fluffy. Beat in powdered sugar one cup at a time, until smooth and creamy. Stir in vanilla extract.",
+        ]
+    ),
+    new Recipe(
+        "12",
+        "Pistachio Rose Delight",
+        "https://i.pinimg.com/564x/5f/10/70/5f1070d5e64d9070e22ec37b93692686.jpg", // Update with the actual image URL
+        "30 mins",
+        "45 mins",
+        "5",
+        [
+            // Cake ingredients
+            "1 ¾ cups all-purpose flour",
+            "1 teaspoon baking soda",
+            "½ teaspoon salt",
+            "1 cup (2 sticks) unsalted butter, softened",
+            "1 ½ cups granulated sugar",
+            "2 large eggs",
+            "1 teaspoon pure vanilla extract",
+            "1 cup buttermilk",
+            "1 tablespoon cocoa powder",
+            "1 tablespoon red food coloring",
+            "1 tablespoon white vinegar",
+            "8 oz cream cheese, softened",
+            "½ cup unsalted butter, softened",
+            "3 cups powdered sugar",
+            "1 teaspoon pure vanilla extract",
+        ],
+        [
+            "Preheat oven to 350 degrees F (175 degrees C). Grease and flour three 8-inch round cake pans.",
+            "In a medium bowl, whisk together flour, baking soda, and salt.",
+            "In a large bowl, cream together butter and sugar until light and fluffy. Beat in eggs one at a time, then stir in vanilla extract.",
+            "In a separate small bowl, whisk together buttermilk, cocoa powder, and red food coloring.",
+            "Alternately add the dry ingredients and buttermilk mixture to the wet ingredients, beginning and ending with the dry ingredients. Mix until just combined.",
+            "In a small bowl, combine white vinegar and baking soda. The mixture will fizz. Quickly stir it into the cake batter.",
+            "Divide the batter evenly between the prepared pans. Bake for 25-30 minutes, or until a toothpick inserted into the center comes out clean.",
+            "Let the cakes cool in the pans for 10 minutes, then transfer them to a wire rack to cool completely.",
+            "In a large bowl, cream together cream cheese and butter until light and fluffy. Beat in powdered sugar one cup at a time, until smooth and creamy. Stir in vanilla extract.",
+        ]
+    ),
 ]
 
 export default recipes;
