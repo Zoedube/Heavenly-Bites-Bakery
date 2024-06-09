@@ -10,10 +10,11 @@ import RecipeLayout from './recipeInfo/RecipeLayout';
 import Footer from './recipeInfo/footer';
 import BackButton from './recipeInfo/backButton';
 
+//Code for main app component
 function App() {
   return (
     <div>
-      <div className='min-h-screen p-6 bg-white text-gray-600 text-lg'>
+      <div className='min-h-screen p-6 bg-pink text-gray-600 text-lg'>
         <Navbar />
         <BackButton />
         <Routes>
