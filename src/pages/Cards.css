@@ -13,8 +13,12 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 65px;
+  font-size: 63px;
   color: #FF5300;
+}
+
+.container{
+  overflow: hidden;
 }
 
 .cards__container {
