@@ -12,7 +12,7 @@ export default function Navbar() {
         <input
           type="text"
           name="search"
-          placeholder="Enter Items..."
+          placeholder="Click me down below"
           className="bg-white/75 p-3 px-8 rounded-full outline-none lg:w-96 shadow-lg shadow-pink-100 focus:shadow-pink-200"
         />
       </form>
@@ -26,7 +26,7 @@ export default function Navbar() {
         <li>
           <NavLink
             to={"/favorites"}
-            className="text-black hover:text-gray-700 duration-300" >favorites
+            className="text-black hover:text-gray-700 duration-300" >Recipe Ingrediants
           </NavLink>
         </li>
       </ul>
