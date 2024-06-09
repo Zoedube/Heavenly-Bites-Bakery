@@ -8,12 +8,14 @@ import Favorites from './pages/favorites';
 // import Details from './pages/details';
 import RecipeLayout from './recipeInfo/RecipeLayout';
 import Footer from './recipeInfo/footer';
+import BackButton from './recipeInfo/backButton';
 
 function App() {
   return (
     <div>
       <div className='min-h-screen p-6 bg-white text-gray-600 text-lg'>
         <Navbar />
+        <BackButton />
         <Routes>
           <Route
             path='/'
