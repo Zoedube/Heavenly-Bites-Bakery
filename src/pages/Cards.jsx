@@ -3,6 +3,7 @@ import './Cards.css';
 import CardItem from './CardItem';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCookieBite } from '@fortawesome/free-solid-svg-icons';
+import recipes from './recipeInfo';
 
 // Card Item Component Code
 function Cards() {
