@@ -7,6 +7,7 @@ function Cards() {
   return (
     <div className='cards'>
       <h1>Recipe Details
+      <i class="fa-solid fa-cookie-bite" style={{color: '#ff5300'}}></i>
       </h1>
       <div className='cards__container'>
         <div className='cards__wrapper'>
