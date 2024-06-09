@@ -1,6 +1,8 @@
 import React from 'react';
 import './Cards.css';
 import CardItem from './CardItem';
+import { FontAwesomeIcon } from '@fontawesome/react-fontawesome';
+import { faCookieBite } from '@fontawesome/free-solid-svg-icons';
 
 // Card Item Component Code
 function Cards() {
