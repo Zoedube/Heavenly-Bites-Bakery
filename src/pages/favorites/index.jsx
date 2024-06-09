@@ -1,6 +1,6 @@
 
 
-export default function Favorites(){
+export default function RecipeIngrediants(){
 
-  return <div>Favorites</div>
+  return <div>Recipe Ingrediants</div>
 }

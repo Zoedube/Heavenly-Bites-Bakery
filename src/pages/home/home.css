@@ -1,0 +1,25 @@
+/* CSS code for home page background, excluding card items */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  background-color:#F39CED; 
+  background-size: auto; 
+  height: 297vh; 
+  width: 90; 
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
