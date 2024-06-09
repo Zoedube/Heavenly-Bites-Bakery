@@ -27,6 +27,7 @@ export default function Navbar() {
             className="text-black hover:text-gray-700 duration-300" >Home
           </NavLink>
         </li>
+        
         <li>
           <NavLink
             to={"/favorites"}
